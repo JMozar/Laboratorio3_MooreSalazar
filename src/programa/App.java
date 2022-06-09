@@ -56,6 +56,12 @@ public class App {
     
     //Buscar
     alumnos.Buscar();
+    
+    //Eliminar
+    System.out.println("");
+    alumnos.Eliminar();
+    System.out.println(alumnos);
+    
 }
 }    
 

@@ -123,7 +123,22 @@ public class AlumnoArreglo {
     }
     
     public void Eliminar(){
-        
+        String codigo;
+        System.out.println("Digita el codigo del alumno que vas a eliminar: ");
+        codigo = entrada.nextLine();
+        int posicion = -1;
+        for(int i=0;i<arreglo.length;i++){
+            if(codigo.equals(arreglo[i].getCodigo())){
+                posicion = i;
+                
+            }
+        }
+        if(posicion>-1){
+            arreglo[posicion]=null;
+            System.out.println("El alumno fue eliminado");
+        }else{
+            System.out.println("El alumno no fue encontrado");
+        }        
     }
     
     public void crecer(){

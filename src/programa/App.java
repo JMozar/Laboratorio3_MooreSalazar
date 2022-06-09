@@ -48,6 +48,11 @@ public class App {
     System.out.println("Ordenamiento metodo BURBUJA:");
     alumnos.ordenarBurbuja();
     System.out.println(alumnos);
-    }
+    
+    //Ordenamiento por Seleccion:
+    System.out.println("Ordenamiento metodo SELECCION:");
+    alumnos.ordenarSeleccion();
+    System.out.println(alumnos);
+}
 }    
 

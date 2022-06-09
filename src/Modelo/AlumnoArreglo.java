@@ -84,6 +84,23 @@ public class AlumnoArreglo {
     }
     
     public void  ordenarSeleccion(){        
+       int i, j,pos;
+        Alumno menor, tmp;
+          for (i = 0; i < arreglo.length - 1; i++) {    
+                menor = arreglo[i];                                       
+                pos = i;                          
+                for (j = i + 1; j < arreglo.length; j++){ 
+                      if (arreglo[j].getPromedio() < menor.getPromedio()) {      
+                          menor = arreglo[j];         
+                          pos = j;
+                      }
+                }
+                if (pos != i){                                       
+                    tmp = arreglo[i];
+                    arreglo[i] = arreglo[pos];
+                    arreglo[pos] = tmp;
+                }
+          }        
 
     }    
     

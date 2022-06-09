@@ -54,7 +54,18 @@ public class AlumnoArreglo {
     //COMPLETAR LO SIGUIENTE Y HACER COMMITS POR CADA PARTE DESARROLLADA
     
     public void  ordenarInserccion(){ 
-
+        Alumno aux;
+        int pos;
+        for(int i=0;i<arreglo.length;i++){
+            pos=i;
+            aux = arreglo[i];
+            
+            while((pos>0) && (arreglo[pos-1].getPromedio()>aux.getPromedio())){
+                arreglo[pos]=arreglo[pos-1];
+                pos--;
+            }
+            arreglo[pos]=aux;
+        }
     }  
     
     public void  ordenarBurbuja(){ 

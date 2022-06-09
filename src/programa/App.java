@@ -38,7 +38,12 @@ public class App {
     System.out.println("");
     System.out.println("Imprimiendo los alumnos del arreglo");
     System.out.println(alumnos);
-        
+    
+    //Ordenar insercion
+    System.out.println("Ordenamiento metodo INSERCION:");
+    alumnos.ordenarInserccion();
+    System.out.println(alumnos);
+    
     }
 }    
 

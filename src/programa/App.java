@@ -53,6 +53,9 @@ public class App {
     System.out.println("Ordenamiento metodo SELECCION:");
     alumnos.ordenarSeleccion();
     System.out.println(alumnos);
+    
+    //Buscar
+    alumnos.Buscar();
 }
 }    
 

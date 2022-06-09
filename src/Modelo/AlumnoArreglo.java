@@ -105,7 +105,21 @@ public class AlumnoArreglo {
     }    
     
     public void Buscar(){
-
+        String codigo;
+        System.out.println("Digita el codigo del alumno que buscas: ");
+        codigo = entrada.nextLine();
+        int posicion = -1;
+        for(int i=0;i<arreglo.length;i++){
+            if(codigo.equals(arreglo[i].getCodigo())){
+                posicion = i;
+                
+            }
+        }
+        if(posicion>-1){
+            System.out.println(arreglo[posicion]);
+        }else{
+            System.out.println("El alumno no fue encontrado");
+        }
     }
     
     public void Eliminar(){

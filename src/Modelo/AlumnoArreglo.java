@@ -69,7 +69,18 @@ public class AlumnoArreglo {
     }  
     
     public void  ordenarBurbuja(){ 
+        Alumno aux;
 
+        for(int i=0;i<(arreglo.length-1);i++){
+            for(int j=0;j<(arreglo.length-i-1);j++){
+                
+                if(arreglo[j+1].getPromedio()>arreglo[j].getPromedio()){
+                    aux=arreglo[j];
+                    arreglo[j]=arreglo[j+1];
+                    arreglo[j+1]=aux;
+                }
+            }
+        }
     }
     
     public void  ordenarSeleccion(){        

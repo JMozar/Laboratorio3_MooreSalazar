@@ -44,6 +44,10 @@ public class App {
     alumnos.ordenarInserccion();
     System.out.println(alumnos);
     
+    //Ordenar burbuja
+    System.out.println("Ordenamiento metodo BURBUJA:");
+    alumnos.ordenarBurbuja();
+    System.out.println(alumnos);
     }
 }    
 

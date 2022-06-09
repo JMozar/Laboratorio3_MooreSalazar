@@ -142,6 +142,14 @@ public class AlumnoArreglo {
     }
     
     public void crecer(){
-  
+        int tam;
+        System.out.print("Digite el numero que crecera el arreglo:");
+        tam = entrada.nextInt();
+        Alumno[] ArregloCrecido = new Alumno[arreglo.length + tam];//Creating a new array with space for an extra element
+        for(int i = 0; i < arreglo.length; i++)
+        {
+            ArregloCrecido[i] = arreglo[i];
+        }
+        System.out.println("El arreglo a crecido "+tam+" espacios");  
     }
 }

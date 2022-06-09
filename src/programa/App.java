@@ -62,6 +62,9 @@ public class App {
     alumnos.Eliminar();
     System.out.println(alumnos);
     
+    //Crecer
+    alumnos.crecer();
+    
 }
 }    
 
